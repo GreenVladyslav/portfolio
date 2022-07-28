@@ -23,4 +23,19 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('active');
         }
     });
+
+    const counter = document.querySelectorAll('.skills__ratings-counter');
+    const lines = document.querySelectorAll('.skills__ratings-line span');
+
+    counter.forEach((item, i) => {
+
+        if (counter.innerHTML > '100%') {
+            lines[i].style.width = '100%';
+        }
+
+        lines[i].style.width = item.innerHTML;
+    
+    });
+
+
 });
