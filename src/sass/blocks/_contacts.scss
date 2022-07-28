@@ -1,0 +1,47 @@
+.contacts {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    &__wrapper {
+        padding: 0 50px 0 35px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        grid-template-rows: 161 344;
+        column-gap: 68px;
+    }
+    &__photo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+    &__title {
+        position: relative;
+        padding-left: 12px;
+        @include before_circle;
+    }
+    &__subtitle {
+        margin-top: 6px;
+    }
+    .divider {
+        margin: 0;
+        margin-top: 4px;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__social {
+        margin-top: 20px;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            &:hover svg path{
+                fill: #ff0000;
+            }
+        }
+    }
+    &__form-title {
+        margin-top: 20px;
+    }
+    &__form {
+
+    }
+}

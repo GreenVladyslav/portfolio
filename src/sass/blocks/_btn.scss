@@ -7,5 +7,18 @@
     border-radius: 5px;
     &:hover {
         box-shadow: 3px 3px 20px $orange;
-    }  
+    }
 }
+
+.btn_submit {
+    margin-top: 28px;
+    background-color: $orange;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 12px 26px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}  
