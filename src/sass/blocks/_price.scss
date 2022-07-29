@@ -7,11 +7,7 @@
         grid-template-columns: repeat(2, 365px);
         grid-template-rows: minmax(162px, auto);
         grid-auto-rows: minmax(162px, auto);
-        // gap: 302px;
         justify-content: space-between;
-    }
-    &__column {
-
     }
     &__circle {
         position: relative;
@@ -37,7 +33,7 @@
         margin-top: 15px;
         display: grid;
         grid-template-columns: 200px 110px;
-        grid-template-rows: minmax(21px, auto);
+        grid-template-rows: repeat(2, minmax(21px, auto));
         justify-content: space-between;
         align-content: space-between;
     }
