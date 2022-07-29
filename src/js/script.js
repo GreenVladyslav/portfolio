@@ -28,14 +28,21 @@ window.addEventListener('DOMContentLoaded', () => {
     const lines = document.querySelectorAll('.skills__ratings-line span');
 
     counter.forEach((item, i) => {
-
-        if (counter.innerHTML > '100%') {
-            lines[i].style.width = '100%';
-        }
-
-        lines[i].style.width = item.innerHTML;
-    
+        lines[i].style.width = item.innerHTML;    
     });
 
+
+    // Smooth scroll 
+
+    const pageup = document.querySelector('.pageup');
+
+    window.scroll(function() {
+
+        if (window.scrollTop() > 1200) {
+            pageup.classList.add('active');
+        } else {
+            pageup.classList.remove('active');
+        }
+    });
 
 });
